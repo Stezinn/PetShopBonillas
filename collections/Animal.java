@@ -1,5 +1,8 @@
 package collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal {
 
 
@@ -8,6 +11,8 @@ public class Animal {
     private int id;
     private String raca;
     private String tipo;
+
+    
 
     public String getTipo() {
         return tipo;

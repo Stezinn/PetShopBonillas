@@ -16,12 +16,12 @@ public class Petshop {
         ArrayList<Animal> animals = new ArrayList<>();
     }
 
-    private static void calcularTotalGanho(List<Animal> animais) {
+    static void calcularTotalGanho(List<Animal> animais) {
         double totalGanho = 0;
 
         for (Animal animal : animais) {
             double precoBase = 0;
-
+            if (animal != null && animal.getTipo() != null)
             if (animal.getTipo().equalsIgnoreCase("cachorro")) {
                 if (animal.porte.equalsIgnoreCase("pequeno")) {
                     precoBase = 20;
